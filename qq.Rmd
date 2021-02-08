@@ -1,0 +1,14 @@
+wine classification dataset
+```{r}
+data <- read.csv("Wine.csv")
+data
+```
+```{r}
+qqnorm(data$malicAcid)
+qqline(data$malicAcid, col = 'red')
+```
+```{r}
+qqnorm(data$hue)
+qqline(data$hue, col = 'red')
+```
+
